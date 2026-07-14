@@ -1,0 +1,17 @@
+Skipping image OS validation for hb__53111916b3bb8baff1a884becbb90faf: docker inspect returned 1
+Collecting main service artifacts
+Failed to download artifact '/app/report.json' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\artifact_handler.py", line 330, in _download_artifact
+    await source_env.service_download_file(
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1025, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1010, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker_unix.py", line 185, in download_file
+    await self._env._run_docker_compose_command(
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 631, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__krqu3ua__env --project-directory C:\JoinHandShake\fix-task-broken\log-report\environment -f C:\Users\Sumit\AppData\Local\Temp\tmprli71t6p\log-report__kRQU3Ua__env-docker-compose-resources.json -f C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\Sumit\AppData\Local\Temp\tmpybfqxupo\docker-compose-mounts.json -f C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-egress-control.yaml -f C:\Users\Sumit\AppData\Local\Temp\tmpakpt76jz\docker-compose-egress-control-services.json cp main:/app/report.json jobs\2026-07-14__23-21-51\log-report__kRQU3Ua\artifacts\app\report.json. Return code: 1. Stdout:  log-report__krqu3ua__env-main-1 Copying log-report__krqu3ua__env-main-1:/app/report.json to jobs\2026-07-14__23-21-51\log-report__kRQU3Ua\artifacts\app\report.json
+Error response from daemon: Could not find the file /app/report.json in container 6e829a2b4093f53594494af2880870709478cd7e31eed3bc0ee4568cfd450e2b
+. Stderr: None. 

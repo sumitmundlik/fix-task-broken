@@ -1,0 +1,18 @@
+Building Docker image harbor-prebuilt:harbor-docker-egress-control-sidecar--38d5fad35d5daec4 from C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\harbor-docker-egress-control-sidecar using C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\harbor-docker-egress-control-sidecar\Dockerfile at 2026-07-14 17:36:13.478460+00:00
+Skipping image OS validation for hb__9e7e643cad976a9885b567ad54987f7c: docker inspect returned 1
+Collecting main service artifacts
+Failed to download artifact '/app/report.json' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\artifact_handler.py", line 330, in _download_artifact
+    await source_env.service_download_file(
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1025, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 1010, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker_unix.py", line 185, in download_file
+    await self._env._run_docker_compose_command(
+  File "C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 631, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__rhn7ykm__env --project-directory C:\JoinHandShake\fix-task-broken\log-report\environment -f C:\Users\Sumit\AppData\Local\Temp\tmpmwn53wok\log-report__RhN7yKm__env-docker-compose-resources.json -f C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\Sumit\AppData\Local\Temp\tmpnlxryrdz\docker-compose-mounts.json -f C:\Users\Sumit\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-egress-control.yaml -f C:\Users\Sumit\AppData\Local\Temp\tmpow8dkfxh\docker-compose-egress-control-services.json cp main:/app/report.json jobs\2026-07-14__23-05-50\log-report__RhN7yKm\artifacts\app\report.json. Return code: 1. Stdout:  log-report__rhn7ykm__env-main-1 Copying log-report__rhn7ykm__env-main-1:/app/report.json to jobs\2026-07-14__23-05-50\log-report__RhN7yKm\artifacts\app\report.json
+Error response from daemon: Could not find the file /app/report.json in container 0762bbf03402f6c0b43d438869033f083a6f8edbb1f7b98e8dd8ba10df03ec99
+. Stderr: None. 

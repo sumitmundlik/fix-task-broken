@@ -1,0 +1,13 @@
+{
+    "agents": [
+        {
+            "name": "claude-code",
+            "model_name": "claude-sonnet-4-6"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "C:\\Users\\Sumit\\AppData\\Local\\Temp\\harbor-check-mcqlmng9\\check-log-report"
+        }
+    ]
+}

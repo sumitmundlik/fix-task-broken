@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/solution/solve.py", line 6, in <module>
+    with open("/app/access.log") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/app/access.log'

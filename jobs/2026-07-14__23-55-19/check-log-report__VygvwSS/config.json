@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "C:\\Users\\Sumit\\AppData\\Local\\Temp\\harbor-check-mcqlmng9\\check-log-report"
+    },
+    "trial_name": "check-log-report__VygvwSS",
+    "trials_dir": "jobs\\2026-07-14__23-55-19",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-sonnet-4-6"
+    },
+    "job_id": "be2f74eb-48a7-4119-bfe4-42a5f2249581"
+}

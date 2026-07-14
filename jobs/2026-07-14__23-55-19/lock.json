@@ -1,0 +1,58 @@
+{
+    "schema_version": 2,
+    "created_at": "2026-07-14T18:25:19.953017Z",
+    "harbor": {
+        "version": "0.18.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 4,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "ApiUsageLimitError",
+            "VerifierOutputParseError",
+            "AgentTimeoutError",
+            "RewardFileEmptyError",
+            "RewardFileNotFoundError",
+            "VerifierTimeoutError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 1,
+            "task": {
+                "name": "check-log-report",
+                "type": "local",
+                "digest": "sha256:dc6746a3ad701fe70a195583173a8bf191d3cd52c2c0fe38f22df374d87b4db2",
+                "path": "C:\\Users\\Sumit\\AppData\\Local\\Temp\\harbor-check-mcqlmng9\\check-log-report"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "claude-code",
+                "model_name": "claude-sonnet-4-6",
+                "skills": [],
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "mcp_servers": []
+            },
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false
+            }
+        }
+    ]
+}
